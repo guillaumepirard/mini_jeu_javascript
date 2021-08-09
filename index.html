@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecompOser</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <div>
+        <div class="label">Your code</div>
+        <textarea id="userCode"></textarea>
+        <button id="launchScript">Lancer le script</button>
+    </div> -->
+     
+
+    <div id="container__board">
+        <h1 class="title">JavaScript Game</h1>
+        <p class="text">(use keyboard arrow to move)</p>
+    </div>
+
+    
+    <template id="board_template">
+        <div id="board">
+            <div class="cellRow" id="row1">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="cellRow" id="row2">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="cellRow" id="row3">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="cellRow" id="row4">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- The win Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modalcontainer">
+                <p class="modal-description">Félicitation vous avez gagné !</p>
+                <button class="play-button">rejouer</button>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- The loose Modal -->
+    <div id="myModal-loose" class="modal-loose">
+
+        <!-- Modal content -->
+        <div class="modal-content-loose">
+            <span class="close-loose">&times;</span>
+            <div class="modalcontainer-loose">
+                <p class="modal-description-loose">Dommage, vous avez perdu !</p>
+                <button class="play-button-loose">rejouer</button>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
